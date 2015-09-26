@@ -1,0 +1,306 @@
+[3;J[H[2JScan : [1mextern_actions.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mextern_actions.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mextern_actions.c: [0mligne 16 commentaire dans le code
+[1;31mErreur: [0;36mextern_actions.c: [0mligne 48 commentaire dans le code
+[1;31mErreur: [0;36mextern_actions.c: [0mligne 20, il manque un saut de ligne
+[1;31mErreur: [0;36mextern_actions.c: [0mligne 52, il manque un saut de ligne
+Scan : [1mget_vision.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mget_vision.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mget_vision.c: [0mligne 16 commentaire dans le code
+[1;31mErreur: [0;36mget_vision.c: [0mligne 48 commentaire dans le code
+[1;31mErreur: [0;36mget_vision.c: [0mligne 71 commentaire dans le code
+[1;31mErreur: [0;36mget_vision.c: [0mligne 86 commentaire dans le code
+[1;31mErreur: [0;36mget_vision.c: [0mligne 118 commentaire dans le code
+[1;31mErreur: [0;36mget_vision.c: [0mligne 19, il manque un saut de ligne
+[1;31mErreur: [0;36mget_vision.c: [0mligne 51, il manque un saut de ligne
+[1;31mErreur: [0;36mget_vision.c: [0mligne 74, il manque un saut de ligne
+[1;31mErreur: [0;36mget_vision.c: [0mligne 121, il manque un saut de ligne
+Scan : [1mget_vision_priorities.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mget_vision_priorities.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mget_vision_priorities.c: [0mligne 16 commentaire dans le code
+[1;31mErreur: [0;36mget_vision_priorities.c: [0mligne 44 commentaire dans le code
+[1;31mErreur: [0;36mget_vision_priorities.c: [0mligne 48, il manque un saut de ligne
+Scan : [1mtab.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mtab.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+Scan : [1mclear_vision.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mclear_vision.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mclear_vision.c: [0mligne 17 commentaire dans le code
+[1;31mErreur: [0;36mclear_vision.c: [0mligne 41 commentaire dans le code
+[1;31mErreur: [0;36mclear_vision.c: [0mligne 74 commentaire dans le code
+[1;31mErreur: [0;36mclear_vision.c: [0mligne 97 commentaire dans le code
+[1;31mErreur: [0;36mclear_vision.c: [0mligne 20, il manque un saut de ligne
+[1;31mErreur: [0;36mclear_vision.c: [0mligne 77, il manque un saut de ligne
+[1;31mErreur: [0;36mclear_vision.c: [0mligne 100, il manque un saut de ligne
+Scan : [1mexecute_action.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mexecute_action.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mexecute_action.c: [0mwrite_actions(t_player *p, int const fd, int i): fonction de plus de 25 lignes
+[1;31mErreur: [0;36mexecute_action.c: [0mligne 47 commentaire dans le code
+[1;31mErreur: [0;36mexecute_action.c: [0mligne 76 commentaire dans le code
+[1;31mErreur: [0;36mexecute_action.c: [0mligne 126 commentaire dans le code
+[1;31mErreur: [0;36mexecute_action.c: [0mligne 128 déclaration et affectation à la même ligne
+[1;31mErreur: [0;36mexecute_action.c: [0mligne 51, il manque un saut de ligne
+[1;31mErreur: [0;36mexecute_action.c: [0mligne 79, il manque un saut de ligne
+[1;31mErreur: [0;36mexecute_action.c: [0mligne 131, il manque un saut de ligne
+Scan : [1mclient.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mclient.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mclient.c: [0mget_next_data(int const fd): fonction de plus de 25 lignes
+[1;31mErreur: [0;36mclient.c: [0mligne 16 commentaire dans le code
+[1;31mErreur: [0;36mclient.c: [0mligne 72 commentaire dans le code
+[1;31mErreur: [0;36mclient.c: [0mligne 105 commentaire dans le code
+[1;31mErreur: [0;36mclient.c: [0mligne 56 déclaration et affectation à la même ligne
+[1;31mErreur: [0;36mclient.c: [0mligne 74 déclaration et affectation à la même ligne
+[1;31mErreur: [0;36mclient.c: [0mligne 108 déclaration et affectation à la même ligne
+[1;31mErreur: [0;36mclient.c: [0mligne 18, il manque un saut de ligne
+[1;31mErreur: [0;36mclient.c: [0mligne 77, il manque un saut de ligne
+[1;31mErreur: [0;36mclient.c: [0mligne 110, il manque un saut de ligne
+[1;31mErreur: [0;36mclient.c: [0mligne 22, il manque un saut de ligne
+Scan : [1mvisited_squares.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mvisited_squares.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mvisited_squares.c: [0mligne 43 commentaire dans le code
+[1;31mErreur: [0;36mvisited_squares.c: [0mligne 74 commentaire dans le code
+Scan : [1mactions.c[0m
+[1;31mErreur: [0;36mactions.c: [0m6 fonctions
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mactions.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mactions.c: [0mligne 16 commentaire dans le code
+[1;31mErreur: [0;36mactions.c: [0mligne 48 commentaire dans le code
+[1;31mErreur: [0;36mactions.c: [0mligne 65 commentaire dans le code
+[1;31mErreur: [0;36mactions.c: [0mligne 83 commentaire dans le code
+[1;31mErreur: [0;36mactions.c: [0mligne 111 commentaire dans le code
+[1;31mErreur: [0;36mactions.c: [0mligne 139 commentaire dans le code
+[1;31mErreur: [0;36mactions.c: [0mligne 19, il manque un saut de ligne
+[1;31mErreur: [0;36mactions.c: [0mligne 51, il manque un saut de ligne
+[1;31mErreur: [0;36mactions.c: [0mligne 69, il manque un saut de ligne
+[1;31mErreur: [0;36mactions.c: [0mligne 86, il manque un saut de ligne
+[1;31mErreur: [0;36mactions.c: [0mligne 114, il manque un saut de ligne
+[1;31mErreur: [0;36mactions.c: [0mligne 142, il manque un saut de ligne
+Scan : [1mbroadcast.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mbroadcast.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mbroadcast.c: [0mligne 47 89 caractères
+[1;31mErreur: [0;36mbroadcast.c: [0mligne 73 204 caractères
+[1;31mErreur: [0;36mbroadcast.c: [0mligne 123 204 caractères
+[1;31mErreur: [0;36mbroadcast.c: [0mligne 127 204 caractères
+[1;31mErreur: [0;36mbroadcast.c: [0mbroadcast(int const fd, t_player *p, int const n): fonction de plus de 25 lignes
+[1;31mErreur: [0;36mbroadcast.c: [0mligne 25 commentaire dans le code
+[1;31mErreur: [0;36mbroadcast.c: [0mligne 60 commentaire dans le code
+[1;31mErreur: [0;36mbroadcast.c: [0mligne 28, il manque un saut de ligne
+[1;31mErreur: [0;36mbroadcast.c: [0mligne 63, il manque un saut de ligne
+Scan : [1mstr.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mstr.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+Scan : [1mmain.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mmain.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mmain.c: [0mligne 18 commentaire dans le code
+[1;31mErreur: [0;36mmain.c: [0mligne 43 commentaire dans le code
+[1;31mErreur: [0;36mmain.c: [0mligne 56 commentaire dans le code
+[1;31mErreur: [0;36mmain.c: [0mligne 85 commentaire dans le code
+[1;31mErreur: [0;36mmain.c: [0mligne 21, il manque un saut de ligne
+[1;31mErreur: [0;36mmain.c: [0mligne 46, il manque un saut de ligne
+[1;31mErreur: [0;36mmain.c: [0mligne 59, il manque un saut de ligne
+[1;31mErreur: [0;36mmain.c: [0mligne 88, il manque un saut de ligne
+Scan : [1mcontact_server.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mcontact_server.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mcontact_server.c: [0mligne 16 commentaire dans le code
+[1;31mErreur: [0;36mcontact_server.c: [0mligne 30 commentaire dans le code
+[1;31mErreur: [0;36mcontact_server.c: [0mligne 58 commentaire dans le code
+[1;31mErreur: [0;36mcontact_server.c: [0mligne 18, il manque un saut de ligne
+[1;31mErreur: [0;36mcontact_server.c: [0mligne 33, il manque un saut de ligne
+Scan : [1mlook.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mlook.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mlook.c: [0mligne 111 82 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 134 159 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 137 82 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 149 85 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 154 121 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 157 150 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 161 138 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 167 116 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 170 90 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 171 84 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 173 103 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 174 141 caractères
+[1;31mErreur: [0;36mlook.c: [0mligne 165 espace en fin de ligne
+[1;31mErreur: [0;36mlook.c: [0mget_best_actions(t_player *p, t_view *view, int can_i_rise): fonction de plus de 25 lignes
+[1;31mErreur: [0;36mlook.c: [0mligne 17 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 38 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 59 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 91 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 126 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 137 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 161 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 163 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 164 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 166 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 167 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 168 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 169 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 170 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 171 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 172 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 173 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 174 commentaire dans le code
+[1;31mErreur: [0;36mlook.c: [0mligne 61 déclaration et affectation à la même ligne
+[1;31mErreur: [0;36mlook.c: [0mligne 31 , 137 multi instruction
+[1;31mErreur: [0;36mlook.c: [0mligne 20, il manque un saut de ligne
+[1;31mErreur: [0;36mlook.c: [0mligne 41, il manque un saut de ligne
+[1;31mErreur: [0;36mlook.c: [0mligne 63, il manque un saut de ligne
+[1;31mErreur: [0;36mlook.c: [0mligne 94, il manque un saut de ligne
+[1;31mErreur: [0;36mlook.c: [0mligne 129, il manque un saut de ligne
+Scan : [1mget_next_line.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mget_next_line.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+Scan : [1mrise.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mrise.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mrise.c: [0mligne 138 121 caractères
+[1;31mErreur: [0;36mrise.c: [0mrise(t_player *p, char *current_square): fonction de plus de 25 lignes
+[1;31mErreur: [0;36mrise.c: [0mligne 17 commentaire dans le code
+[1;31mErreur: [0;36mrise.c: [0mligne 50 commentaire dans le code
+[1;31mErreur: [0;36mrise.c: [0mligne 84 commentaire dans le code
+[1;31mErreur: [0;36mrise.c: [0mligne 124 commentaire dans le code
+[1;31mErreur: [0;36mrise.c: [0mligne 142 commentaire dans le code
+[1;31mErreur: [0;36mrise.c: [0mligne 172 commentaire dans le code
+[1;31mErreur: [0;36mrise.c: [0mligne 154 commentaire dans le code
+[1;31mErreur: [0;36mrise.c: [0mligne 144 déclaration et affectation à la même ligne
+[1;31mErreur: [0;36mrise.c: [0mligne 130, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mrise.c: [0mligne 137, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mrise.c: [0mligne 53, il manque un saut de ligne
+[1;31mErreur: [0;36mrise.c: [0mligne 87, il manque un saut de ligne
+[1;31mErreur: [0;36mrise.c: [0mligne 128, il manque un saut de ligne
+[1;31mErreur: [0;36mrise.c: [0mligne 146, il manque un saut de ligne
+Scan : [1merrors.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36merrors.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+Scan : [1mget_best_way_to_survive.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mget_best_way_to_survive.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mget_best_way_to_survive.c: [0mcannot_access_current_square(view, prev_visited_squares, datas)) < 0): fonction de plus de 25 lignes
+[1;31mErreur: [0;36mget_best_way_to_survive.c: [0mligne 17 commentaire dans le code
+[1;31mErreur: [0;36mget_best_way_to_survive.c: [0mligne 51 commentaire dans le code
+[1;31mErreur: [0;36mget_best_way_to_survive.c: [0mligne 71 commentaire dans le code
+[1;31mErreur: [0;36mget_best_way_to_survive.c: [0mligne 86 commentaire dans le code
+[1;31mErreur: [0;36mget_best_way_to_survive.c: [0mligne 73 déclaration et affectation à la même ligne
+Scan : [1mreceived_msg.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mreceived_msg.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 86 82 caractères
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 168 90 caractères
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 169 118 caractères
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 171 91 caractères
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 173 85 caractères
+[1;31mErreur: [0;36mreceived_msg.c: [0mstrcmp(data, p->team_name)): fonction de plus de 25 lignes
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 16 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 49 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 81 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 99 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 127 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 166 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 167 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 168 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 169 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 170 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 171 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 172 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 173 commentaire dans le code
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 110, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 111, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 112, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 120, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 121, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 122, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 123, il manque une tabulation (alt + i)
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 52, il manque un saut de ligne
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 84, il manque un saut de ligne
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 102, il manque un saut de ligne
+[1;31mErreur: [0;36mreceived_msg.c: [0mligne 130, il manque un saut de ligne
+Scan : [1minit_player.c[0m
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36minit_player.c: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31mErreur: [0;36minit_player.c: [0mfputstr(fd, "fork
+") == -1): fonction de plus de 25 lignes
+[1;31mErreur: [0;36minit_player.c: [0mligne 16 commentaire dans le code
+[1;31mErreur: [0;36minit_player.c: [0mligne 38 commentaire dans le code
+[1;31mErreur: [0;36minit_player.c: [0mligne 61 commentaire dans le code
+[1;31mErreur: [0;36minit_player.c: [0mligne 93 commentaire dans le code
+[1;31mErreur: [0;36minit_player.c: [0mligne 126 commentaire dans le code
+[0mScan : [1mclient.h
+[1;36m/***************************************\ [0m
+[1;36m|            [1;31m TRICHE[1;36m                     
+| [1;31mErreur: [0;36mclient.h: [0mmauvais header          [1;36m
+[1;36m\                                       /[0m
+[1;36m****************************************[0m
+[1;31m: file not found or not readable for symbols[0m
+[1;31mVous avez fait 197 fautes de norme.
+[0m
