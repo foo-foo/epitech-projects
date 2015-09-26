@@ -1,0 +1,29 @@
+\033[1mNAME\033[0m\n
+\t	lemipc - simulate a battle between processes\n\n\033[1mSYNOPSIS\033[0m\n
+\t	\033[1mlemipc\033[0m -\033[1mh\033[0m -\033[1mi\033[0m -\033[1mt\033[0m number of teams -\033[1mp\033[0m number of players -\033[1mm\033[0m map size\n\n\033[1mDESCRIPTION\033[0m\n
+\t	The \033[1mlemipc\033[0m program simulates a battle between a variable number of teams of variable number of players.\n
+\n
+\t	Each player is represented by a process.\n
+\t	The battle takes place on a 2D map of variable size.\n
+\n
+\t	To win the game, a team should be the only one left on the map.\n
+\t	To kill a player, there need to be 2 players from a different team next to the target.\n
+\n
+\t	\033[1m-h\033[0m\n
+\t\t		display this manual.\n
+\n
+\t	\033[1m-i\033[0m\n
+\t\t		launch the battle in text mode (without GUI - Graphic User Interface).\n
+\n
+\t	\033[1m-t number of teams\033[0m\n
+\t\t		specify the number of teams which should join the battle. It should be a number between 2 and 6.\n
+\n
+\t	\033[1m-p number of players\033[0m\n
+\t\t		specify the number of players in a single team. It should be a positive number.\n
+\n
+\t	\033[1m-m map size\033[0m\n
+\t\t		specify the size of the battle arena (map). It should be a number between 10 and 120.\n\n\033[1mEXIT STATUS\033[0m\n
+\t	    0	if everything turned right,\n
+\n
+\t	    1	if any trouble occured.\n\n\033[1mAUTHOR\033[0m\n
+\t	Written by Anatole Menichetti and Aniss Bencharif.
