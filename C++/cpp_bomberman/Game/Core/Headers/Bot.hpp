@@ -1,0 +1,117 @@
+//
+// Bot.hpp for  in /home/menich_a/rendu/cpp_bomberman/work_in_progress/v6
+// 
+// Made by Anatole Menichetti
+// Login   <menich_a@epitech.net>
+// 
+// Started on  Wed May 27 16:23:42 2015 Anatole Menichetti
+// Last update Sat Jun 13 12:46:45 2015 Anatole Menichetti
+//
+
+#ifndef _BOT_HPP_
+# define _BOT_HPP_
+
+# include <iostream>
+# include <vector>
+
+/* Objects */
+
+# include "Clock.hh"
+# include "Input.hh"
+# include "Field.hpp"
+# include "APlayer.hpp"
+
+/* Bot */
+
+# include "Bomb.hpp"
+# include "ABonus.hpp"
+
+/*
+** Actions
+*/
+# define UP		0
+# define DOWN		1
+# define LEFT		2
+# define RIGHT		3
+# define PUT_BOMB	4
+# define STAGN		5
+
+/*
+** Tab indexes
+*/
+# define PRIORITY	0
+# define DIRECTION	1
+
+/*
+** Cases
+*/
+# define DANGEROUS_CASE 4242
+# define FORBIDDEN_CASE 1000
+# define DEFAULT_CHOICE 4242
+
+/*
+** Priorities
+*/
+# define BONUS_PRIORITY		-15
+# define NORMAL_PRIORITY	1
+# define FORBIDDEN_PRIORITY	0
+# define DANGEROUS_PRIORITY	4242//BAD_WAY - BONUS_PRIORITY
+# define ESCAPE_BONUS_PRIORITY	0
+# define ESCAPE_NORMAL_PRIORITY	1
+# define OPPOSITE_MALUS		5
+# define MALUS_NEAR_ENNEMY	5
+# define BAD_WAY		400
+
+/*
+** Various
+*/
+# define PREVISION_MAX		20
+# define STAGN_TIME		25
+# define STAGN_LIMIT		250
+# define BOMB_LIMIT		10
+# define DISTANCE_ENNEMY_MAX	12
+
+# define BOT_MAX_SPEED		0.75
+
+class	Bot : public APlayer
+{
+protected:
+  int		_maxBombs;
+  char		_lastMove;
+  size_t	_stagnTime;
+  size_t	_nbrStagnTurns;
+
+public:
+  Bot(Character* const character, size_t const id);
+  virtual ~Bot() {};
+
+  virtual void	update(gdl::Clock const &, Field&);
+
+private:
+  virtual void	getBestWay(std::vector<std::vector <AObject*> > const &, size_t const, size_t const, int [2]) = 0;
+  virtual char	getNextAction(Field &) = 0;
+  int	getEscapeWayRec(std::vector<std::vector <AObject*> > const &,
+			size_t const, size_t const, bool const, size_t const,
+			std::vector<std::pair<size_t, size_t> > &) const;
+  void	getOneEscapeWay(std::vector<std::vector <AObject*> > const &, int [2], char const,
+			int const, int const, int const, int const, bool const,
+			std::vector<std::pair<size_t, size_t> > &) const;
+  void	getOneEscapeWayRec(std::vector<std::vector <AObject*> > const &, int const, int const,
+			   size_t const, size_t const, int &, bool const, size_t const,
+			   std::vector<std::pair<size_t, size_t> > &) const;
+
+protected:
+  virtual bool	isCurrentCaseDangerous(std::vector<std::vector <AObject*> > const &, size_t const, size_t const) const;
+  virtual char	getEscapeWay(std::vector<std::vector <AObject*> > const &, size_t const, size_t const, bool const) const;
+
+  virtual int	getNbrHit(std::vector<std::vector <AObject*> > const &, size_t const, size_t const) const;
+  virtual bool	willCurrentCaseBeDangerous(std::vector<std::vector <AObject*> > const &, size_t const, size_t const) const;
+  virtual bool	isOppositeWay(char const) const;
+  virtual bool	isThereObstacle(std::vector<std::vector <AObject*> > const &, size_t const, size_t const) const;
+  virtual bool	cannotAccessThisCase(std::vector<std::vector <AObject*> > const &, int const, int const, bool const) const;
+  virtual void	pickUpBonusIfPossible(Field &, std::vector<std::vector <AObject*> > &, int const, int const);
+
+  virtual bool	currentCaseIsBetweenThreeWalls(std::vector<std::vector <AObject*> > const &, size_t const, size_t const) const;
+};
+
+#endif /* !_BOT_HPP_ */

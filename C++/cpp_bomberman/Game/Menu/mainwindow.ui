@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1018</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1018</width>
+    <height>676</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1018</width>
+    <height>676</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Bomberman</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="bomberressources.qrc">
+    <normaloff>:/icons/ressources/icon.ico</normaloff>:/icons/ressources/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainWindow
+{
+	background:  url(':/images/ressources/background.png') no-repeat;
+}
+
+/*#MainWindow QPushButton:hover
+{
+	background: url(':/images/ressources/btn2.png') no-repeat;
+	color: yellow;
+}
+
+#MainWindow QPushButton
+{
+	color: white;
+	background-image: url(:/images/ressources/btn1.png);
+	line-height: 26px;
+	padding-bottom: 6px;
+	font-weight: 400;
+}*/</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1018</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="bomberressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

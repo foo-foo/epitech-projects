@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>ressources/btn1.png</file>
+        <file>ressources/btn2.png</file>
+        <file>ressources/background.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>ressources/slkscr.eot</file>
+        <file>ressources/slkscr.ttf</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>ressources/icon.ico</file>
+    </qresource>
+    <qresource prefix="/textures">
+        <file>ressources/grass.png</file>
+        <file>ressources/bonus.png</file>
+        <file>ressources/mur.png</file>
+    </qresource>
+</RCC>
