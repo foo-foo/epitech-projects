@@ -1,0 +1,44 @@
+
+~ home dir different pour chaque user
+
+~ gestion de compte avancee:
+  gestion des mdp securisee
+  confirmation de mdp
+  possibilité de modifier les mots de passes avec un put .pwd
+
+~ gestion des droits
+
+~ USER sans parametres
+
+~ CWD sans parametres
+
+~ LIST avec parametres
+
+~ codes retours explicits: en couleur
+
+~ pourcentage de traitement pour RETR et STOR
+
+~ reconnaissance de corruption de fichier pour RETR et STOR
+
+~ fichier de conf:
+  pwd container
+  user directory
+
+~ respect de la RFC: commandes bonus:
+  LCWD
+  LLIST
+  LPWD
+  MRETR
+  MSTOR
+  HELP
+  STOU
+  APPE
+  MKD
+  ACCT
+  NLST
+  RNFR
+  RNTO
+  NOOP
+  RMD
+  DELE
+
