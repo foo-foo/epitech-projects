@@ -1,0 +1,15 @@
+
+	~ Score.
+	~ Tete differente du reste tu corps.
+	~ Augmentation de la vitesse au court du jeu.
+	~ Augmentation de la vitesse a chque fruit mange.
+	~ Ecran de Game Over.
+	~ GUI stylees.
+	~ Bordure
+	~ Nombre de fruits augmente selon des paliers de points.
+	~ Combos donnent 10 points au lieu de 1.
+	~ Fruits empoisonés (intervertis les touches).
+	~ Fruits miraculeux (ralentis le snake).
+	~ Beep quand un fruit est mangé.
+	~ Activer / Désactiver le boost (avec espace).
+	~ Retry nouvelle partie.
