@@ -1,0 +1,24 @@
+
+	Welcome in Bombermario
+
+
+	NOTE:
+
+	I had to realize this project for school with 3 partners.
+	Unfortunatly, the qt menu part and the IA part are not well realized.
+	So I removed these parts from the Game.
+
+	Now you can only launch the game with the map pokemon (stocked in Game/Maps) and in multiplayer mode.
+	I may fix the menu & IA issues when I will have some free time but it's not for now.
+
+
+	HOW TO:
+
+	To launch the game please move in Game folder an use an LD_PRELOAD command line as below:
+
+	LD_PRELOAD=LibBomberman_linux_x64/libs/libfbxsdk.so ./bomberman
+
+
+
+
+	Enjoy ;)
