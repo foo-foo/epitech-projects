@@ -18,7 +18,8 @@
 
 	LD_PRELOAD=LibBomberman_linux_x64/libs/libfbxsdk.so ./bomberman
 
-
+	
+	To play : player 1 use ZQSD keys & player 2 numeric keyboard arrows.
 
 
 	Enjoy ;)
