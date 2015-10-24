@@ -5,7 +5,7 @@
 // Login   <rosain_f@epitech.net>
 // 
 // Started on  Tue May  5 10:49:49 2015 Francois Rosain
-// Last update Sun Jun 14 17:45:42 2015 Sebastien Lauret
+// Last update Tue Sep 15 10:08:50 2015 Anatole Menichetti
 //
 
 #ifndef _GAME_ENGINE_HPP_
@@ -115,7 +115,7 @@ private:
   std::vector<std::pair<size_t, size_t> > const	_generateSpawnPoints() const;
 
 public:
-  GameEngine(Field&, int, int, int);
+  GameEngine(Field&, bool);
   virtual ~GameEngine() {};
 
   virtual bool	initialize();
