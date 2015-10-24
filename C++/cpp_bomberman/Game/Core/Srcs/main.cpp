@@ -5,18 +5,23 @@
 // Login   <menich_a@epitech.net>
 // 
 // Started on  Tue Sep 15 06:42:53 2015 Anatole Menichetti
-// Last update Tue Sep 15 07:08:40 2015 Anatole Menichetti
+// Last update Tue Sep 15 10:13:34 2015 Anatole Menichetti
 //
 
 #include "GameEngine.hpp"
 #include "BombEngine.hpp"
 #include "Field.hpp"
 
-int main()
+int main(int ac, char **av)
 {
+  bool	multiplayer = false;
+
+  if (ac > 1 && std::string(av[1]) == "multiplayer=on")
+    multiplayer = true;
+
   int           gameStatus;
   Field         field("./Maps/pokemon.bmap");
-  GameEngine    engine(field, 2, 0, 1);
+  GameEngine    engine(field, multiplayer);
 
   if (!engine.initialize())
     {
