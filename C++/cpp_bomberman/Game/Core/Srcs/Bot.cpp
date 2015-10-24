@@ -5,7 +5,7 @@
 // Login   <menich_a@epitech.net>
 // 
 // Started on  Wed May 27 16:26:29 2015 Anatole Menichetti
-// Last update Sat Jun 13 13:06:41 2015 Anatole Menichetti
+// Last update Tue Sep 15 09:51:53 2015 Anatole Menichetti
 //
 
 #include "Bot.hpp"
@@ -345,6 +345,8 @@ void	Bot::update(gdl::Clock const &clock, Field& map)
   float	add;
   int	action;
 
+  if (_character->isDancing())
+    return ;
   action = getNextAction(map);
   if (action < 0 || action == STAGN)
     {
