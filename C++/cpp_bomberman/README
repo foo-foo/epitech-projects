@@ -25,6 +25,12 @@
 	
 	
 	P1 use ZQSD keys & P2 numeric keyboard arrows.
+	
+	
+	BUGS :
+	
+	Game may be slow due to 3d models & animations which are very heavy.
+	Game may quit suddenly when puting a bomb at same position & time that another player. This one will be fixed with other troubles when I will have some time.
 
 
 	Enjoy ;)
