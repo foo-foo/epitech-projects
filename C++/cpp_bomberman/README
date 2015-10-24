@@ -5,21 +5,26 @@
 	NOTE:
 
 	I had to realize this project for school with 3 partners.
-	Unfortunatly, the qt menu part and the IA part are not well realized.
-	So I removed these parts from the Game.
-
-	Now you can only launch the game with the map pokemon (stocked in Game/Maps) and in multiplayer mode.
-	I may fix the menu & IA issues when I will have some free time but it's not for now.
+	Unfortunatly, the  qt menu part was not well realized.
+	I completly removed the QT menu because of compability troubles.
+	So it's not possible to choose IA numbers & level anymore or to choose map.
+	To play on another map, for the moment you will need to go in Maps folder, find the map you want to play on and rename it "pokemon.bmap"
+	
+	I know it need to be fix and I will fix this when I will have some freetime but it's not for now.
 
 
 	HOW TO:
 
-	To launch the game please move in Game folder an use an LD_PRELOAD command line as below:
+	To launch the game please go to Game folder an use an LD_PRELOAD command line as below:
 
 	LD_PRELOAD=LibBomberman_linux_x64/libs/libfbxsdk.so ./bomberman
-
 	
-	To play : player 1 use ZQSD keys & player 2 numeric keyboard arrows.
+	if you want to play in multiplayer you need to use
+
+	LD_PRELOAD=LibBomberman_linux_x64/libs/libfbxsdk.so ./bomberman multiplayer=on
+	
+	
+	P1 use ZQSD keys & P2 numeric keyboard arrows.
 
 
 	Enjoy ;)
