@@ -5,56 +5,37 @@
 // Login   <rosain_f@epitech.net>
 // 
 // Started on  Tue May  5 10:51:46 2015 Francois Rosain
-// Last update Sun Jun 14 17:45:44 2015 Sebastien Lauret
+// Last update Tue Sep 15 10:16:40 2015 Anatole Menichetti
 //
 
 #include <SFML/Audio.hpp>
 #include "GameEngine.hpp"
 #include <algorithm>
 
-GameEngine::GameEngine(Field &field, int humans, int const bots, int botLevel)
-  : _field(field), _humans(humans), _bots(bots), _state(0), _soundBuffers(5), _sounds(5)
+GameEngine::GameEngine(Field &field, bool multiplayer)
+  : _field(field), _humans(multiplayer ? 2 : 1),
+    _bots(multiplayer ? 0 : 1),
+    _state(0), _soundBuffers(5), _sounds(5)
 {
-  std::cout << "bot = " << bots << std::endl;
-  size_t	monsters = 0;
-  botGenerator	botGenerators[6];
+  botGenerator	botGenerator;
+  int		humans = (multiplayer ? 2 : 1);
+  int		bots = (multiplayer ? 0 : 1);
 
-  if (humans < 1 || humans > 2)
-    {
-      humans = 2;
-      _humans = 2;
-    }
-  if (humans == 1 && !bots && !monsters)
-    monsters = 1;
   for (int p = 0; p < humans; p++)
     {
       _characters.push_back(new Character(p + 1));
       _players.push_back(new Human(_characters[p], _input, p, _sounds[1], _sounds[2]));
     }
 
-  botGenerators[0] = &GameEngine::_createNewTeub;
-  botGenerators[1] = &GameEngine::_createNewUndecided;
-  botGenerators[2] = &GameEngine::_createNewRecruit;
-  botGenerators[3] = &GameEngine::_createNewSoldier;
-  botGenerators[4] = &GameEngine::_createNewWarrior;
-  botGenerators[5] = &GameEngine::_createNewLegend;
-  if (botLevel < 1)
-    botLevel = 1;
-  if (botLevel > 6)
-    botLevel = 6;
+  botGenerator = &GameEngine::_createNewTeub;
+
   for (int b = humans; b < bots + humans; b++)
     {
       if (_humans == 1 && _bots == 1)
 	_characters.push_back(new Character(2));
       else
 	_characters.push_back(new Character());
-      _players.push_back((this->*botGenerators[botLevel])(b));
-    }
-  for (size_t m = humans + bots; m < humans + bots + monsters; m++)
-    {
-      _characters.push_back(new Character(3));
-      _monsters.push_back(_characters[m]);
-      _players.push_back(new Monster(_characters[m], m));
+      _players.push_back((this->*botGenerator)(b));
     }
 }
 
@@ -382,12 +363,11 @@ bool	GameEngine::_checkDead(int const id)
 	    soundNbr = 3;
 	  _theme.Stop();
 	  _sounds[soundNbr].Play();
-	  while (_sounds[soundNbr].GetStatus() == sf::Sound::Playing);
+	  _characters[0]->danse();
 	  if (pNbr > 1)
 	    _state = _players[rand() % pNbr]->getId() + 1;
 	  else
 	    _state = _players[0]->getId() + 1;
-	  return (true);
 	}
       else
 	{
@@ -408,11 +388,20 @@ bool	GameEngine::update()
   _context.updateClock(_clock);
   _context.updateInputs(_input);
 
+  if (_characters[0]->isDancing())
+    {
+      if (_sounds[3].GetStatus() != sf::Sound::Playing && _sounds[4].GetStatus() != sf::Sound::Playing)
+	return (false);
+      _players[0]->update(_clock, _field);
+      return (true);
+    }
   for (size_t i = 0; i < _characters.size(); i++)
     if (_checkDead(i))
-      return (false);
-  if (_theme.GetStatus() == sf::Music::Paused && _sounds[0].GetStatus() == sf::Sound::Stopped)
-    _theme.Play();
+	return (false);
+  if (!_characters[0]->isDancing() &&
+      _theme.GetStatus() == sf::Music::Paused &&
+      _sounds[0].GetStatus() == sf::Sound::Stopped)
+    _theme.Play();				\
   for (size_t i = 0; i < _players.size(); i++)
     _players[i]->update(_clock, _field);
   return (true);
@@ -463,23 +452,33 @@ void	GameEngine::_drawStatOne(glm::mat4& transformation)
 {
   _shader.setUniform("view", transformation);
   _profils[ONE]->draw(_shader, _clock);
-  for (int i = 0; i < _players[ONE]->getBomb(); i++)
-    _statBombs[ONE][i]->draw(_shader, _clock);
-  for (int i = 0; i < _players[ONE]->getPower(); i++)
-    _statPower[ONE][i]->draw(_shader, _clock);
-  for (int i = 0; i < (int)_players[ONE]->getSpeed(); i++)
-    _statSpeed[ONE][i]->draw(_shader, _clock);
+  if (_state != 2)
+    {
+      for (int i = 0; i < _players[ONE]->getBomb(); i++)
+	_statBombs[ONE][i]->draw(_shader, _clock);
+      for (int i = 0; i < _players[ONE]->getPower(); i++)
+	_statPower[ONE][i]->draw(_shader, _clock);
+      for (int i = 0; i < (int)_players[ONE]->getSpeed(); i++)
+	_statSpeed[ONE][i]->draw(_shader, _clock);
+    }
 }
 
 void	GameEngine::_drawStatTwo()
 {
-  _profils[TWO]->draw(_shader, _clock);
-  for (int i = 0; i < _players[TWO]->getBomb(); i++)
-    _statBombs[TWO][i]->draw(_shader, _clock);
-  for (int i = 0; i < _players[TWO]->getPower(); i++)
-    _statPower[TWO][i]->draw(_shader, _clock);
-  for (int i = 0; i < (int)_players[TWO]->getSpeed(); i++)
-    _statSpeed[TWO][i]->draw(_shader, _clock);
+  int	p = 1;
+
+  if (_state != 1)
+    {
+      if (_state == 2)
+	p = 0;
+      _profils[TWO]->draw(_shader, _clock);
+      for (int i = 0; i < _players[p]->getBomb(); i++)
+	_statBombs[TWO][i]->draw(_shader, _clock);
+      for (int i = 0; i < _players[p]->getPower(); i++)
+	_statPower[TWO][i]->draw(_shader, _clock);
+      for (int i = 0; i < (int)_players[p]->getSpeed(); i++)
+	_statSpeed[TWO][i]->draw(_shader, _clock);
+    }
 }
 
 gdl::SdlContext&	GameEngine::getContext()
@@ -500,7 +499,6 @@ void	GameEngine::draw()
   _shader.bind();
 
   /* Player 1 */
-
   if (_humans == 1)
     glViewport(0,0, WIDTH, HEIGHT - ATH_HEIGHT);
   else if (_humans == 2)
@@ -511,7 +509,6 @@ void	GameEngine::draw()
   _drawGame(transformation, ONE);
 
   /* Player 2 */
-
   if (_humans == 2)
     {
       glViewport(WIDTH/2,0, WIDTH/2, HEIGHT - ATH_HEIGHT);
@@ -522,7 +519,6 @@ void	GameEngine::draw()
     }
 
   /* Mini Map */
-
   glViewport(WIDTH/2 - MAP_HEIGHT/2, HEIGHT - ATH_HEIGHT, MAP_HEIGHT, MAP_HEIGHT);
   transformation = glm::lookAt(glm::vec3(_field.getWidth()/2 + 0.5f, 20, _field.getHeight()/2 + 0.51f),
   			       glm::vec3(_field.getWidth()/2 + 0.5f, 1, _field.getHeight()/2 + 0.5f),
@@ -530,7 +526,6 @@ void	GameEngine::draw()
   _drawGame(transformation, -1);
 
   /* Stats Player 1 */
-  
 
   glViewport(0, HEIGHT - ATH_HEIGHT, WIDTH/2 - MAP_HEIGHT/2, ATH_HEIGHT);
   transformation = glm::lookAt(glm::vec3(0,0,0),
@@ -538,8 +533,8 @@ void	GameEngine::draw()
   			       glm::vec3(0,1,0));
   _drawStatOne(transformation);
   _pipes[0]->draw(_shader, _clock);
-  /* Stats Player 2 */
 
+  /* Stats Player 2 */
   glViewport(WIDTH/2 + MAP_HEIGHT/2, HEIGHT - ATH_HEIGHT, WIDTH/2 - MAP_HEIGHT/2, ATH_HEIGHT);
   transformation = glm::lookAt(glm::vec3(20,0,20),
 			       glm::vec3(20, 1, 20.01f),
@@ -548,7 +543,6 @@ void	GameEngine::draw()
   _pipes[1]->draw(_shader, _clock);
   if (_humans == 2)
     _drawStatTwo();
-
 
   /* Draw */
 
