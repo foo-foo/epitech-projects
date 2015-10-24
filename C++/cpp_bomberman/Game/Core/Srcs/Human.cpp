@@ -5,7 +5,7 @@
 // Login   <menich_a@epitech.net>
 // 
 // Started on  Wed May 27 11:09:57 2015 Anatole Menichetti
-// Last update Sun Jun 14 15:31:17 2015 Anatole Menichetti
+// Last update Tue Sep 15 09:54:11 2015 Anatole Menichetti
 //
 
 #include "Human.hpp"
@@ -83,6 +83,10 @@ void	Human::update(gdl::Clock const &clock, Field& field)
   float const	x = _character->getX();
   float	const y = _character->getY();
   std::vector<std::vector<AObject*> > &map = field.getMap();
+
+
+  if (_character->isDancing())
+    return ;
 
   add = 0.1f * static_cast<float>(clock.getElapsed()) * SPEED(_speed);
 
