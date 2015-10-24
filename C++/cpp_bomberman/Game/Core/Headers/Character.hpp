@@ -5,7 +5,7 @@
 // Login   <rosain_f@epitech.net>
 // 
 // Started on  Fri May 15 11:43:46 2015 Francois Rosain
-// Last update Sat Jun 13 10:13:50 2015 Anatole Menichetti
+// Last update Tue Sep 15 08:53:26 2015 Anatole Menichetti
 //
 
 #ifndef _CHARACTER_HPP_
@@ -27,7 +27,7 @@ private:
   float		_y;
   bool		_mooving;
   size_t const	_id;
-
+  bool		_isDancing;
   void		_animationHandler();
 
 public:
@@ -47,6 +47,8 @@ public:
   void	moveRight(float const);
   void	pauseModel();
   void	putBomb();
+  bool	isDancing();
+  void	danse();
   void	pickBonus();
 
   bool	isMonster() const;
