@@ -5,7 +5,7 @@
 // Login   <rosain_f@epitech.net>
 // 
 // Started on  Fri May 15 11:45:17 2015 Francois Rosain
-// Last update Sun Jun 14 16:42:59 2015 Anatole Menichetti
+// Last update Tue Sep 15 08:52:12 2015 Anatole Menichetti
 //
 
 #include "Character.hpp"
@@ -140,6 +140,19 @@ void	Character::putBomb()
 {
  if (!_model.setCurrentSubAnim("putbomb"))
    std::cout << "Error : can\'t start animation on model." << std::endl;
+}
+
+bool	Character::isDancing()
+{
+  return (_isDancing);
+}
+
+void	Character::danse()
+{
+ if (!_model.setCurrentSubAnim("danse"))
+   std::cout << "Error : can\'t start animation on model." << std::endl;
+ else
+   _isDancing = true;
 }
 
 void	Character::pickBonus()
